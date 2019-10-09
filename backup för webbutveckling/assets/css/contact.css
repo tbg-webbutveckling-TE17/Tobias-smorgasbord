@@ -1,0 +1,232 @@
+@charset 'utf-8';
+
+body {
+    margin: auto;
+    background-image: url(../images/backgound_2.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    font-size: 20px;
+    
+}
+
+.dropbtn {    
+    background-color: #333;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+
+.dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+
+.dropdown-content a:hover {background-color: #ddd}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.dropdown:hover .dropbtn {
+    background-color: #111;
+}
+
+.dropbtns {
+    background-color: #333;
+}
+
+.dropdowna {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-conect {
+    display: none;
+    position:absolute;
+    left: 145px;
+    top: 0px;
+    background-color: #f1f1f1;
+    min-width: 132px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 19;
+}
+
+.dropdown-conect a {
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+    background: #333;
+    display: block;
+}
+
+
+.dropdown-conect a:hover {background-color: #111}
+
+
+.dropdowna:hover .dropdown-conect {
+    display: block;
+}
+
+.dropdowna:hover .dropbtns {
+    background-color: #111;
+}
+
+
+ul {
+    height: 51px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: ;
+    background-color: #333;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+
+i {
+    border: solid #4CAF50;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.topnav a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  border: none;
+  font-size: 17px;
+}
+input{
+    outline: none;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    border-radius: 6px;
+}
+
+.img{
+    background-image: url(../images/basket-154317_960_720.png);
+    background-size:contain;
+    background-repeat:no-repeat;
+    width: 25px;
+    height: 23px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.main {
+    width: 80%;
+    height: 100%;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    padding: 15px;
+    background: white;
+}
+.main a{
+    font-family: sans-serif;
+    display: block;
+    width: 175px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.main a:hover{
+    background-color: #919191;
+}
+
+.main p{
+    font-family: monospace;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}

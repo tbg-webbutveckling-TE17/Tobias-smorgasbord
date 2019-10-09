@@ -1,0 +1,1129 @@
+@charset 'utf-8';
+
+body {
+    margin: auto;
+    background-image: url(../images/backgound_2.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    font-size: 20px;
+    
+}
+
+.dropbtn {    
+    background-color: #333;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+
+.dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+
+.dropdown-content a:hover {background-color: #ddd}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.dropdown:hover .dropbtn {
+    background-color: #111;
+}
+
+.dropbtns {
+    background-color: #333;
+}
+
+.dropdowna {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-conect {
+    display: none;
+    position:absolute;
+    top: 0px;
+    min-width: 132px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 19;
+}
+
+.dropdown-conect a {
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+    background: #333;
+    display: block;
+}
+
+
+.dropdown-conect a:hover {background-color: #111}
+
+
+.dropdowna:hover .dropdown-conect {
+    display: block;
+}
+
+.dropdowna:hover .dropbtns {
+    background-color: #111;
+}
+
+ul {
+    height: 51px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+    background-color: #333;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index:999;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+
+i {
+    border: solid #4CAF50;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.topnav a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  border: none;
+  font-size: 17px;
+}
+input{
+    outline: none;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    border-radius: 6px;
+}
+
+.img{
+    background-image: url(../images/basket-154317_960_720.png);
+    background-size:contain;
+    background-repeat:no-repeat;
+    width: 25px;
+    height: 23px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.slideshow-container {
+    position:relative;
+    width: 808px;
+    height: 450px;
+    margin-top:51px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    z-index: 998 ;
+}
+
+
+.mySlides {
+    display:none;
+}
+
+
+.prev, .next {
+    cursor: pointer;
+    position:absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #333;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(76, 175, 80,0.8);
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active_1, .dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+.wrapper{
+    width: 808px;
+    height: auto;
+    margin-left: 23.5%;
+    margin-right: 23.5%;
+    grid-gap: 4px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+        "test_1 test_2 test_3 test_4"
+        "test_1_2 test_2_2 test_3_2 test_4_2"
+        "test_1_3 test_2_3 test_3_3 test_4_3"
+        "test_1_4 test_2_4 test_3_4 test_4_4"
+        "test_1_5 test_2_5 test_3_5 test_4_5"
+        "test_1_6 test_2_6 test_3_6 test_4_6"
+        "test_1_7 test_2_7 test_3_7 test_4_7"
+        "test_1_8 test_2_8 test_3_8 test_4_8"
+        "test_1_9 test_2_9 test_3_9 test_4_9"
+        "test_1_10 test_2_10 test_3_10 test_4_10"
+        "test_1_11 test_2_11 test_3_11 test_4_11"
+        "test_1_12 test_2_12 test_3_12 test_4_12"
+        "test_1_13 test_2_13 test_3_13 test_4_13"
+        "test_1_14 test_2_14 test_3_14 test_4_14"
+        "test_1_15 test_2_15 test_3_15 test_4_15"
+        "test_1_16 test_2_16 test_3_16 test_4_16"
+        "test_1_17 test_2_17 test_3_17 test_4_17"
+        "test_1_18 test_2_18 test_3_18 test_4_18"
+        
+}
+
+.test_1{
+    grid-area:test_1;
+    background-image: url(../images/case_1.jpg);
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+
+.test_2{
+    grid-area:test_2;
+    background-image: url(../images/case_2.jpg);
+    background-size: 70% 78%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+.test_3{
+    grid-area:test_3;
+    background-image: url(../images/case_3.jpg);
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+.test_4{
+    grid-area:test_4;
+    background-image: url(../images/case_4.jpg);
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+
+.test_1_2{
+    grid-area:test_1_2;
+    background-image: url(../images/case_5.jpg);
+    background-size: 70% 70%;
+    background-repeat: no-repeat;
+    background-position:top ;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+.test_2_2{
+    grid-area:test_2_2;
+    background-image: url(../images/case_6.jpg);
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+
+.test_3_2{
+    grid-area:test_3_2;
+    background-image: url(../images/cooling_1.jpg);
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+
+.test_4_2{
+    grid-area:test_4_2;
+    background-image: url(../images/cooling_2.jpg);
+    background-size: 70% 40%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+
+.test_1_3{
+    grid-area:test_1_3;
+    background-image: url(../images/cooling_3.jpg);
+    background-size: 80% 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+.test_2_3{
+    grid-area:test_2_3;
+    background-image: url(../images/cooling_4.jpg);
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+.test_3_3{
+    grid-area:test_3_3;
+    background-image: url(../images/cooling_5.jpg);
+    background-size: 70% 70%;
+    background-repeat: no-repeat;
+    background-position:top ;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+.test_4_3{
+    grid-area:test_4_3;
+    background-image: url(../images/cooling_6.jpg);
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+
+.test_1_4{
+    grid-area:test_1_4;
+    background-image: url(../images/graphicscard_1.jpg);
+    background-size: 70% 70%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+
+.test_2_4{
+    grid-area:test_2_4;
+    background-image: url(../images/graphicscard_2.jpg);
+    background-size: 70% 78%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+.test_3_4{
+    grid-area:test_3_4;
+    background-image: url(../images/graphicscard_3.jpg);
+    background-size: 70% 70%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+.test_4_4{
+    grid-area:test_4_4;
+    background-image: url(../images/graphicscard_4.jpg);
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+
+.test_1_5{
+    grid-area:test_1_5;
+    background-image: url(../images/graphicscard_5.jpg);
+    background-size: 70% 70%;
+    background-repeat: no-repeat;
+    background-position:top ;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+.test_2_5{
+    grid-area:test_2_5;
+    background-image: url(../images/graphicscard_6.jpg);
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+
+.test_3_5{
+    grid-area:test_3_5;
+    background-image: url(../images/motherboard_1.jpg);
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+
+.test_4_5{
+    grid-area:test_4_5;
+    background-image: url(../images/motherboard_2.jpg);
+    background-size: 70% 78%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+.test_1_6{
+    grid-area:test_1_6;
+    background-image: url(../images/motherboard_3.jpg);
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+.test_2_6{
+    grid-area:test_2_6;
+    background-image: url(../images/motherboard_4.jpg);
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+
+.test_3_6{
+    grid-area:test_3_6;
+    background-image: url(../images/motherboard_5.jpg);
+    background-size: 70% 70%;
+    background-repeat: no-repeat;
+    background-position:top ;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+.test_4_6{
+    grid-area:test_4_6;
+    background-image: url(../images/motherboard_6.jpg);
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+
+.test_1_7{
+    grid-area:test_1_7;
+    background-image: url(../images/power_supply_1.jpg);
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+
+.test_2_7{
+    grid-area:test_2_7;
+    background-image: url(../images/power_supply_2.jpg);
+    background-size: 70% 78%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+.test_3_7{
+    grid-area:test_3_7;
+    background-image: url(../images/power_supply_3.jpg);
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+.test_4_7{
+    grid-area:test_4_7;
+    background-image: url(../images/power_supply_4.jpg);
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+
+.test_1_8{
+    grid-area:test_1_8;
+    background-image: url(../images/power_supply_5.jpg);
+    background-size: 70% 70%;
+    background-repeat: no-repeat;
+    background-position:top ;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+.test_2_8{
+    grid-area:test_2_8;
+    background-image: url(../images/power_supply_6.jpg);
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+
+.test_3_8{
+    grid-area:test_3_8;
+    background-image: url(../images/prossesor_1.jpg);
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+
+.test_4_8{
+    grid-area:test_4_8;
+    background-image: url(../images/prossesor_2.jpg);
+    background-size: 70% 78%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+.test_1_9{
+    grid-area:test_1_9;
+    background-image: url(../images/prossesor_3.jpg);
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+.test_2_9{
+    grid-area:test_2_9;
+    background-image: url(../images/prossesor_4.jpg);
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+
+.test_3_9{
+    grid-area:test_3_9;
+    background-image: url(../images/prossesor_5.jpg);
+    background-size: 70% 70%;
+    background-repeat: no-repeat;
+    background-position:top ;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+.test_4_9{
+    grid-area:test_4_9;
+    background-image: url(../images/prossesor_6.jpg);
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+
+.test_1_10{
+    grid-area:test_1_10;
+    background-image: url(../images/harddrives_1.jpg);
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+
+.test_2_10{
+    grid-area:test_2_10;
+    background-image: url(../images/harddrives_2.jpg);
+    background-size: 70% 70%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+.test_3_10{
+    grid-area:test_3_10;
+    background-image: url(../images/harddrives_3.jpg);
+    background-size: 80% 70%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+.test_4_10{
+    grid-area:test_4_10;
+    background-image: url(../images/harddrives_4.jpg);
+    background-size: 80% 70%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+
+.test_1_11{
+    grid-area:test_1_11;
+    background-image: url(../images/harddrives_5.jpg);
+    background-size: 70% 70%;
+    background-repeat: no-repeat;
+    background-position:top ;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+.test_2_11{
+    grid-area:test_2_11;
+    background-image: url(../images/harddrives_6.jpg);
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+
+.test_3_11{
+    grid-area:test_3_11;
+    background-image: url(../images/headset_1.jpg);
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+
+.test_4_11{
+    grid-area:test_4_11;
+    background-image: url(../images/headset_2.jpg);
+    background-size: 70% 70%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+.test_1_12{
+    grid-area:test_1_12;
+    background-image: url(../images/headset_3.jpg);
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+.test_2_12{
+    grid-area:test_2_12;
+    background-image: url(../images/headset_4.jpg);
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+
+.test_3_12{
+    grid-area:test_3_12;
+    background-image: url(../images/headset_5.jpg);
+    background-size: 70% 70%;
+    background-repeat: no-repeat;
+    background-position:top ;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+.test_4_12{
+    grid-area:test_4_12;
+       background-image: url(../images/headset_6.jpg);
+    background-size: 80% 60%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+
+.test_1_13{
+    grid-area:test_1_13;
+    background-image: url(../images/keyboard_1.jpg);
+    background-size: 80% 60%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+
+.test_2_13{
+    grid-area:test_2_13;
+    background-image: url(../images/keyboard_2.jpg);
+    background-size: 70% 40%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+.test_3_13{
+    grid-area:test_3_13;
+    background-image: url(../images/keyboard_3.jpg);
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+.test_4_13{
+    grid-area:test_4_13;
+    background-image: url(../images/keyboard_4.jpg);
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+
+.test_1_14{
+    grid-area:test_1_14;
+    background-image: url(../images/keyboard_5.jpg);
+    background-size: 70% 70%;
+    background-repeat: no-repeat;
+    background-position:top ;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+.test_2_14{
+    grid-area:test_2_14;
+       background-image: url(../images/keyboard_6.jpg);
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+
+.test_3_14{
+    grid-area:test_3_14;
+    background-image: url(../images/mouse_1.jpg);
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+
+.test_4_14{
+    grid-area:test_4_14;
+    background-image: url(../images/mouse_2.jpg);
+    background-size: 50% 78%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+.test_1_15{
+    grid-area:test_1_15;
+    background-image: url(../images/mouse_3.jpg);
+    background-size: 100% 80%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+.test_2_15{
+    grid-area:test_2_15;
+    background-image: url(../images/mouse_4.jpg);
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+
+.test_3_15{
+    grid-area:test_3_15;
+    background-image: url(../images/mouse_5.jpg);
+    background-size: 70% 70%;
+    background-repeat: no-repeat;
+    background-position:top ;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+.test_4_15{
+    grid-area:test_4_15;
+       background-image: url(../images/mouse_6.jpg);
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+
+.test_1_16{
+    grid-area:test_1_16;
+    background-image: url(../images/mouse_pad_1.jpg);
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+
+.test_2_16{
+    grid-area:test_2_16;
+    background-image: url(../images/mouse_pad_2.jpeg);
+    background-size: 70% 70%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+.test_3_16{
+    grid-area:test_3_16;
+    background-image: url(../images/mouse_pad_3.jpg);
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+.test_4_16{
+    grid-area:test_4_16;
+    background-image: url(../images/mouse_pad_4.jpg);
+    background-size: 70% 70%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+
+.test_1_17{
+    grid-area:test_1_17;
+    background-image: url(../images/mouse_pad_5.jpg);
+    background-size: 70% 70%;
+    background-repeat: no-repeat;
+    background-position:top ;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+.test_2_17{
+    grid-area:test_2_17;
+       background-image: url(../images/mouse_pad_6.jpg);
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+
+.test_3_17{
+    grid-area:test_3_17;
+    background-image: url(../images/screen_1.jpg);
+    background-size: 70% 70%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+
+.test_4_17{
+    grid-area:test_4_17;
+    background-image: url(../images/screen_2.jpg);
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+.test_1_18{
+    grid-area:test_1_18;
+    background-image: url(../images/screen_3.jpg);
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+.test_2_18{
+    grid-area:test_2_18;
+    background-image: url(../images/screen_4.jpg);
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+
+.test_3_18{
+    grid-area:test_3_18;
+    background-image: url(../images/screen_5.jpg);
+    background-size: 70% 70%;
+    background-repeat: no-repeat;
+    background-position:top ;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+.test_4_18{
+    grid-area:test_4_18;
+       background-image: url(../images/screen_6.jpg);
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
