@@ -101,3 +101,53 @@ function mytimer() {
 mytimer();
 
 var myTime = setInterval(mytimer, 1000);
+
+var stopBtn = document.getElementsByTagName('button')[0];
+stopBtn.addEventListener('mouseenter', function(){
+    clearInterval(myTime)
+    alert('time has stopped')
+});
+
+stopBtn.addEventListener('mouseleave', function(){
+    myTime = setInterval(mytimer, 1000)
+    //alert('time has started again')
+});
+
+// calcute tip
+
+function calulateTip(total) {
+    var tipPercent = 0.15;
+    return total * tipPercent;
+}
+
+var billlTotal = prompt("quanto costa?");
+var billTip = calulateTip(billlTotal);
+var receipt = "Bill Total: " + billlTotal + " Tip: " + billTip;
+console.log(receipt);
+
+
+
+
+function tellFortune( job, partner, children, location){
+        
+}
+var job = j;
+var partner = p;
+var children = c;
+var location = l;
+var fortune = 'you will be a ' + job ' married to ' + partner + ' with ' + children + ' number of kids and live in ' + location ;
+console.log(fortune);
+
+tellFortune("","","","");
+
+/*
+write a function named tellFortune that:
+takes 4 arguments: number of children, partner's name, geographic location, job title.
+and married to Z with N kids."
+call that function 3 times with 3 diffrent values for the argument
+
+bonus: create a button that calls this function
+eatch time the button is clicked rantom values of 4 arguments will be printed out
+Tip: store different values of each argument in arrays that when is called
+random values
+*/
