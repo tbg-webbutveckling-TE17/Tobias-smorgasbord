@@ -115,30 +115,32 @@ stopBtn.addEventListener('mouseleave', function(){
 
 // calcute tip
 
-function calulateTip(total) {
-    var tipPercent = 0.15;
-    return total * tipPercent;
+// function calulateTip(total) {
+//     var tipPercent = 0.15;
+//     return total * tipPercent;
+// }
+
+// var billlTotal = prompt("quanto costa?");
+// var billTip = calulateTip(billlTotal);
+// var receipt = "Bill Total: " + billlTotal + " Tip: " + billTip;
+// console.log(receipt);
+
+
+
+
+function tellFortune(job, partner, children, location){
+    var fortune = 'you will be a ' + job + ' married to ' + partner + ' with ' + children + ' kids and live in ' + location ;
+    var printOut = document.getElementsByClassName('displayFortune')[0];
+    printOut.innerHTML = fortune
 }
 
-var billlTotal = prompt("quanto costa?");
-var billTip = calulateTip(billlTotal);
-var receipt = "Bill Total: " + billlTotal + " Tip: " + billTip;
-console.log(receipt);
 
+var jobarr = ['buss driver','alchemist','teacher','chef'];
+var partnerarr =['Jerremy','Mikel','Susan','Coco'];
+var childrenarr =['1','2','3','4'];
+var locationarr =['London','U.S.A','Japan','France'];
 
-
-
-function tellFortune( job, partner, children, location){
-        
-}
-var job = j;
-var partner = p;
-var children = c;
-var location = l;
-var fortune = 'you will be a ' + job ' married to ' + partner + ' with ' + children + ' number of kids and live in ' + location ;
-console.log(fortune);
-
-tellFortune("","","","");
+tellFortune("A","B","C","D");
 
 /*
 write a function named tellFortune that:
