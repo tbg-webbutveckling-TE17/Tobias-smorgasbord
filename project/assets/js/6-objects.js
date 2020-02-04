@@ -49,23 +49,29 @@ var junkobject = {
 };
 
 output.innerHTML = junkobject.pets.species;
-
+output.innerHTML = "";
 var posts = [
     {
         author: 'Attwood',
         title:'HandMaidsTail',
-        comments:[ 'a comment' ],
+        comments:[ 'a comment 1' ],
     }, 
     {
         author:'Jules Verne',
         title:'around the world under the Sea',
-        comments:'a comment',
+        comments:[ 'a comment 2' ],
     }, 
     {
-        author:'',
-        title:'',
-        comments:'a comment',
+        author:'DR.zeuze',
+        title:'cat in the hat',
+        comments:[ 'a comment 3' ],
     }
 ];
 
-output.innerHTML = 'author: ' + posts[1].author + 'comments: ' + posts[1].comments[0];
+posts.forEach(function(post) {
+    output.innerHTML += 'author: ' + post.author + '<br/> title: ' + post.title + '<br/> comments: ' + post.comments + "<br/><br/>"; 
+});
+
+for (let index = 0; index < posts.length; index++) {
+    output.innerHTML += '<br/> author: ' + posts[index].author + '<br/> comments: ' + posts[index].title + '<br/> title: ' + posts[index].comments + "<br/>";    
+}
