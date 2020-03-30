@@ -13,21 +13,39 @@ ul{
     margin-top: -4px;
     
 }
+.topbar:hover{
+    box-shadow: 0 9px 16px 0 white;
+    border-radius: 15px;
+}
 
 .topbar{
     background-color:goldenrod;
     font-size: 35px;
     font-family: sans-serif;
-    border:none;
+    border:20px;
     padding: 10px;
     width: 400px;
+    border-radius: 2px;
 }
 
 
 .cart{
-    background-image:url(basket.png);
+    background-color:goldenrod;
+    font-size: 35px;
     font-family: sans-serif;
-    width: 50px;
-    border: 1px solid #fff;
-    height: 50px;
+    border:none;
+    padding: 10px;
+    width: 200px;  
+}
+
+.cart:hover{
+    box-shadow: 0 9px 16px 0 white;
+    border-radius: 15px;
+}
+
+.fa-shopping-cart {
+    color: #fff;
+    font-size: 35px;
+    border: none;
+    
 }
