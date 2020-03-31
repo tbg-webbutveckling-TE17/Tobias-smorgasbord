@@ -3,19 +3,18 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 100vh;
+    height: 200vh;
 }
 ul{
     display: flex;
-    position:fixed;
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-top: -4px;
+    justify-content: center;
+    position: fixed;
+    padding-left: 0px;
+    top: 0px;
+    left: 50%;
+    transform: translate( -50%);
+    color: transparent;
     
-}
-.topbar:hover{
-    box-shadow: 0 9px 16px 0 white;
-    border-radius: 15px;
 }
 
 .topbar{
@@ -24,28 +23,75 @@ ul{
     font-family: sans-serif;
     border:20px;
     padding: 10px;
-    width: 400px;
-    border-radius: 2px;
+    width: 350px;
+    height: 80px;
+    border-radius: 5px;
 }
 
+.topbar:hover{
+    box-shadow: 0 5px 20px 5px white;
+    border-radius: 13px;
+}
 
 .cart{
     background-color:goldenrod;
     font-size: 35px;
     font-family: sans-serif;
-    border:none;
+    border:20px;
+    border-radius: 5px;
     padding: 10px;
-    width: 200px;  
+    width: 200px;
+    height: 80px;  
 }
 
 .cart:hover{
-    box-shadow: 0 9px 16px 0 white;
-    border-radius: 15px;
+    box-shadow: 0 5px 20px 5px white;
+    border-radius: 13px;
 }
 
 .fa-shopping-cart {
-    color: #fff;
+    color: white;
     font-size: 35px;
     border: none;
     
+}
+
+.fa-file-alt {
+    color: white;
+    font-size: 35px;
+    border: none;
+}
+
+.fa-phone-alt {
+    color: white;
+    font-size: 35px;
+    border: none;
+}
+
+.fa-keyboard {
+    color: white;
+    font-size: 35px;
+    border: none;
+}
+
+.fa-microchip {
+    color: white;
+    font-size: 35px;
+    border: none;
+}
+
+.fa-home{
+    color: white;
+    font-size: 35px;
+    border: none;
+}
+
+.image-slider{
+    background-color: lightgray;
+    width: 1200px ;
+    height: 650px;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    margin-top: 85px;
+
 }
