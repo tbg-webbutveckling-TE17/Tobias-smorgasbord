@@ -9,6 +9,7 @@ ul{
     display: flex;
     justify-content: center;
     position: fixed;
+    margin-top: 0px;
     padding-left: 0px;
     top: 0px;
     left: 50%;
@@ -26,6 +27,7 @@ ul{
     width: 350px;
     height: 80px;
     border-radius: 5px;
+    outline: transparent;
 }
 
 .topbar:hover{
@@ -42,6 +44,7 @@ ul{
     padding: 10px;
     width: 200px;
     height: 80px;  
+    outline: transparent;
 }
 
 .cart:hover{
@@ -87,11 +90,65 @@ ul{
 }
 
 .image-slider{
-    background-color: lightgray;
-    width: 1200px ;
+    background-color:transparent;
+    position: relative;
+    width: 1000px ;
     height: 650px;
     margin-inline-start: auto;
     margin-inline-end: auto;
-    margin-top: 85px;
+    margin-top: 150px;
 
+}
+
+.slider-images{
+    height: 40px;
+    width: 40px;
+    background-color: lightpink;
+}
+
+.images{
+    width:1000px;
+    height: 650px;
+}
+
+.left-button{
+    font-size: 50px;
+    color:rgb(216,216,216);
+    width: 65px;
+    margin-top: 290px;
+    margin-bottom: 300px;
+    position: absolute;
+    background-color: transparent;
+    border-radius: 60px;
+    transition-duration: .4s;
+    border-color: transparent;
+    opacity: .7;
+    outline: transparent;
+}
+.right-button{
+    font-size: 50px;
+    color:rgb(216,216,216);
+    width: 65px;
+    position: absolute;
+    background-color: transparent;
+    margin-left: -66px;
+    margin-top: 290px;
+    margin-bottom: 300px;
+    border-radius: 60px;
+    transition-duration: .4s;
+    border-color: transparent;
+    opacity: .7;
+    outline: transparent;
+}
+
+.right-button:hover{
+    background-color: rgb(40,40,40,0.8);
+    opacity: 1;
+    border-color: rgb(216,216,216);
+}
+
+.left-button:hover{
+    background-color: rgb(40,40,40,0.8);
+    opacity: 1;
+    border-color: rgb(216,216,216);
 }
