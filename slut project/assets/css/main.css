@@ -112,8 +112,10 @@ ul{
   .dropdown-content {
     display: none;
     position: absolute;
+    border-radius: 5px;
     background-color: #f9f9f9;
-    min-width: 160px;
+    margin-left: -150px;
+    min-width: 500px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
@@ -128,7 +130,29 @@ ul{
     border: 50px;
   }
 
-.dropdown-content a:hover {background-color: #f1f1f1}
+  .dropdown-content p {
+    font-size: 30px;
+    color: black;
+    border-bottom: solid;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    padding-left: 20px;
+  }
+
+  .dropdown-content button{
+      font-size: 30px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      margin-left: 335px ;
+      background-color: rgba(1, 101, 251, 0.39);
+      border-style: solid;
+      border-radius: 15px;
+      border-color: rgb(35, 35, 113);
+  }
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
 
 .dropdown:hover .dropdown-content {
     display: block;
@@ -268,5 +292,91 @@ ul{
     font-size: 20px;
     background-color: transparent;
     border-color: transparent;
+    outline: transparent;
+}
+
+.items-for-sale{
+    margin-top: 70px;
+    margin-left:289px;
+    width: 1950px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 40px;
+}
+
+.item1{
+    background-color: rgb(194, 194, 194);
+    padding: 20px;
+    height: 500px;
+    width: 417px;
+    border-radius: 8px;
+}
+
+.item2{
+    background-color: rgb(194, 194, 194);
+    padding: 20px;
+    height: 500px;
+    width: 417px;
+    border-radius: 8px;
+}
+
+.item3{
+    background-color: rgb(194, 194, 194);
+    padding: 20px;
+    height: 500px;
+    width: 417px;
+    border-radius: 8px;
+}
+
+.item4{
+    background-color: rgb(194, 194, 194);
+    padding: 20px;
+    height: 500px;
+    width: 417px;
+    border-radius: 8px;
+}
+
+.item5{
+    background-color: rgb(194, 194, 194);
+    padding: 20px;
+    height: 500px;
+    width: 417px;
+    border-radius: 8px;
+}
+
+.item6{
+    background-color: rgb(194, 194, 194);
+    padding: 20px;
+    height: 500px;
+    width: 417px;
+    border-radius: 8px;
+}
+
+.item7{
+    background-color: rgb(194, 194, 194);
+    padding: 20px;
+    height: 500px;
+    width: 417px;
+    border-radius: 8px;
+}
+
+.item8{
+    background-color: rgb(194, 194, 194);
+    padding: 20px;
+    height: 500px;
+    width: 417px;
+    border-radius: 8px;
+}
+
+.itemtext{
+    margin-top: 440px;
+    margin-left: -20px;
+    width: 457px;
+    height: 62px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    font-size: 25px;
+    background-color: transparent;
+    border: none;
     outline: transparent;
 }
