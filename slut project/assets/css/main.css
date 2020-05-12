@@ -26,18 +26,21 @@ ul{
     padding: 10px;
     width: 350px;
     height: 80px;
-    border-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     outline: transparent;
 }
 
 .topbar:hover{
     box-shadow: 0 5px 20px 5px white;
-    border-radius: 13px;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
 }
 
 .cart:hover{
     box-shadow: 0 5px 20px 5px white;
-    border-radius: 13px;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
 }
 
 .fa-shopping-cart {
@@ -94,7 +97,8 @@ ul{
     font-size: 35px;
     font-family: sans-serif;
     border:20px;
-    border-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     padding: 10px;
     width: 200px;
     height: 80px;  
@@ -369,14 +373,26 @@ ul{
 }
 
 .itemtext{
-    margin-top: 440px;
+    margin-top:0px;
     margin-left: -20px;
     width: 457px;
     height: 62px;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
     font-size: 25px;
-    background-color: transparent;
+    background-color: white;
     border: none;
     outline: transparent;
+}
+
+.itemimage{
+    border-bottom: solid 2px  rgb(194, 194, 194);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    margin-bottom: -4px;
+    margin-left: -20px;
+    margin-top: -20px;
+    width: 457px;
+    height: 478px;
+    
 }
