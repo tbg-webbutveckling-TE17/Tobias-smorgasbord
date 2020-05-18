@@ -26,8 +26,8 @@
             <button class="topbar"><i class="fas fa-file-alt"></i> About</button>
         </li>
             <div class="dropdown">
-                <button class="cart"><i class="fas fa-shopping-cart"></i>Cart</button>
-                <div class="dropdown-content">
+                <button id="cartbtn" class="cart" onclick="cart()"><i class="fas fa-shopping-cart"></i>Cart</button>
+                <div id="cartdropdown" class="dropdown-content">
                   <p href="#" class="shopping-cart-items">Shopping cart</p>
                   <a href="#"></a>
                   <a href="#"></a>
@@ -40,17 +40,10 @@
     <section class="image-slider">
         <button class="left-button"><i class="fas fa-angle-left"></i></button>
 
-        <button class="current-image1"><i class="fas fa-circle"></i></button>
-        <button class="current-image2"><i class="far fa-circle"></i></button>
-        <button class="current-image3"><i class="far fa-circle"></i></button>
-        <button class="current-image4"><i class="far fa-circle"></i></button>
-        <button class="current-image5"><i class="far fa-circle"></i></button>
-        <button class="current-image6"><i class="far fa-circle"></i></button>
-
         <button class="right-button"><i class="fas fa-angle-right"></i></button>
 
         <img src="assets/images/harddrives_2.jpg" alt="" class="images">
-        <img src="assets/images/graphicscard_2.jpg" alt="" class="images">
+        <img src="assets/images/graphicscard_1_edit.jpg" alt="" class="images">
         <img src="assets/images/screen_2.jpg" alt="" class="images">
         <img src="assets/images/keyboard_2.jpg" alt="" class="images">
         <img src="assets/images/case_4.jpg" alt="" class="images">
@@ -98,6 +91,8 @@
             <button class="itemtext">Turtle Beach Headset 50P (Multiformat)</button>
         </div>
       </div>
+
+      <script src="assets/js/components.js"></script>
 
 </body>
 </html>
