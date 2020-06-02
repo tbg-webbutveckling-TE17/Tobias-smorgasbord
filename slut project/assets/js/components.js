@@ -102,57 +102,127 @@ var imgContainer = document.querySelector(".image-slider");
  var cartP = document.getElementsByClassName("cart-products")[0];
 
  Txt1.addEventListener("click", function() {
+        var contain = document.createElement("section")
         var para = document.createElement("a");
         var node = document.createTextNode("Corsair Carbide SPEC-Alpha");
         para.appendChild(node);
-        cartP.appendChild(para);
+        contain.appendChild(para);
+        var removeBtn = document.createElement("a");
+        removeBtn.innerHTML = "X";
+        contain.appendChild(removeBtn);
+        cartP.appendChild(contain);
+        removeBtn.onclick = function() {
+                cartP.removeChild(contain);
+        }
 })
 
 Txt2.addEventListener("click", function() {
+        var contain = document.createElement("section")
         var para = document.createElement("a");
         var node = document.createTextNode("ASUS 34inch LED ROG Swift PG348Q G-Sync Gamingskärm");
         para.appendChild(node);
-        cartP.appendChild(para);
+        contain.appendChild(para);
+        var removeBtn = document.createElement("a");
+        removeBtn.innerHTML = "X";
+        contain.appendChild(removeBtn);
+        cartP.appendChild(contain);
+        removeBtn.onclick = function() {
+                cartP.removeChild(contain);
+        }
 })
 
 Txt3.addEventListener("click", function() {
+        var contain = document.createElement("section")
         var para = document.createElement("a");
         var node = document.createTextNode("Palit GeForce GTX 1050 Ti StormX HDMI DP 4GB");
         para.appendChild(node);
-        cartP.appendChild(para);
+        contain.appendChild(para);
+        var removeBtn = document.createElement("a");
+        removeBtn.innerHTML = "X";
+        contain.appendChild(removeBtn);
+        cartP.appendChild(contain);
+        removeBtn.onclick = function() {
+                cartP.removeChild(contain);
+        }
 })
 
 Txt4.addEventListener("click", function() {
+        var contain = document.createElement("section")
         var para = document.createElement("a");
         var node = document.createTextNode("AMD Ryzen 3 2200G APU med Vega 8 grafik (box)");
         para.appendChild(node);
-        cartP.appendChild(para);
+        contain.appendChild(para);
+        var removeBtn = document.createElement("a");
+        removeBtn.innerHTML = "X";
+        contain.appendChild(removeBtn);
+        cartP.appendChild(contain);
+        removeBtn.onclick = function() {
+                cartP.removeChild(contain);
+        }
 })
 
 Txt5.addEventListener("click", function() {
+        var contain = document.createElement("section")
         var para = document.createElement("a");
         var node = document.createTextNode("HyperX FURY S Pro Gaming Mouse Pad (extra large)");
         para.appendChild(node);
-        cartP.appendChild(para);
+        contain.appendChild(para);
+        var removeBtn = document.createElement("a");
+        removeBtn.innerHTML = "X";
+        contain.appendChild(removeBtn);
+        cartP.appendChild(contain);
+        removeBtn.onclick = function() {
+                cartP.removeChild(contain);
+        }
 })
 
 Txt6.addEventListener("click", function() {
+        var contain = document.createElement("section")
         var para = document.createElement("a");
         var node = document.createTextNode("be quiet! System Power 8 500W PSU");
         para.appendChild(node);
-        cartP.appendChild(para);
+        contain.appendChild(para);
+        var removeBtn = document.createElement("a");
+        removeBtn.innerHTML = "X";
+        contain.appendChild(removeBtn);
+        cartP.appendChild(contain);
+        removeBtn.onclick = function() {
+                cartP.removeChild(contain);
+        }
 })
 
 Txt7.addEventListener("click", function() {
+        var contain = document.createElement("section")
         var para = document.createElement("a");
         var node = document.createTextNode("Logitech G602 Wireless Gaming Mouse");
         para.appendChild(node);
-        cartP.appendChild(para);
+        contain.appendChild(para);
+        var removeBtn = document.createElement("a");
+        removeBtn.innerHTML = "X";
+        contain.appendChild(removeBtn);
+        cartP.appendChild(contain);
+        removeBtn.onclick = function() {
+                cartP.removeChild(contain);
+        }
 })
 
-Txt8.addEventListener("click", function() {
+Txt8.addEventListener("click", function() {        
+        var contain = document.createElement("section")
         var para = document.createElement("a");
         var node = document.createTextNode("Turtle Beach Headset 50P (Multiformat)");
         para.appendChild(node);
-        cartP.appendChild(para);
+        contain.appendChild(para);
+        var removeBtn = document.createElement("a");
+        removeBtn.innerHTML = "X";
+        contain.appendChild(removeBtn);
+        cartP.appendChild(contain);
+        removeBtn.onclick = function() {
+                cartP.removeChild(contain);
+        }
 })
+
+
+function removeitem(){
+        cartP.removeChild(para);
+}
+
